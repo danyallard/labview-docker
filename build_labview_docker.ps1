@@ -16,7 +16,7 @@ $package_name_list.Add("vianalyzer")
 $package_name_list.Add("utf")
 
 $labview_version_list = [System.Collections.ArrayList]::new()
-#$labview_version_list.Add($labview_version_21)
+$labview_version_list.Add($labview_version_21)
 $labview_version_list.Add($labview_version_22)
 
 $package_bitness_list = [System.Collections.ArrayList]::new()
