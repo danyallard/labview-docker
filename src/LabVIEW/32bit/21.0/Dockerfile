@@ -11,7 +11,8 @@ RUN nipkg.exe feed-add --name=ni-labview-2021-core-x86-en-2021-released %LV_RELE
     powershell -Command New-Item 'C:\Program Files (x86)\National Instruments\LabVIEW 2021' -ItemType Directory &&\
     echo server.tcp.enabled=True>"C:\Program Files (x86)\National Instruments\LabVIEW 2021\LabVIEW.ini" &&\
     setx /M PATH "%PATH%;C:\Program Files (x86)\National Instruments\Shared\License Manager" &&\
-    nipkg.exe install --accept-eulas --yes ni-labview-2021-core-x86-en & exit 0
+    nipkg.exe install --accept-eulas --yes ni-labview-2021-core-x86-en & exit 0 &&\
+    shutdown /r
 
 # Download and Install LabVIEW CLI
 # Set environment path to call LabVIEW CLI
