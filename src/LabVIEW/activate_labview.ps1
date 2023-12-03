@@ -1,17 +1,18 @@
 # Activate LabVIEW 2021 License and verify if it's activated
 
-IF (( $null -ne $Args[0] ) -and ( $null -ne $Args[1] ) -and ( $null -ne $Args[2] ) -and ( $null -ne $Args[3] )) {   
+IF (( $null -ne $Args[0] ) -and ( $null -ne $Args[1] ) -and ( $null -ne $Args[2] ) -and ( $null -ne $Args[3] ) -and ( $null -ne $Args[4] )) {   
 
 # Set input parameters to variable
 $SERIALNUMBER = $Args[0]
 $FIRSTNAME = $Args[1]
 $LASTNAME = $Args[2]
 $ORGANIZATIONNAME = $Args[3]
+$LABVIEWVERSION = $Args[4]
 
 # Execute Activation Command
 Write-Output "---Activate LabVIEW ---"
 & "C:\Program Files (x86)\National Instruments\Shared\License Manager\bin\nilmUtil.exe" -s `
--activate "LabVIEW_PDSD_PKG 21.0001" `
+-activate "LabVIEW_PDSD_PKG $LABVIEWVERSION" `
 -serialnumber "$SERIALNUMBER" `
 -firstname "$FIRSTNAME" `
 -lastname "$LASTNAME" `
