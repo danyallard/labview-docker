@@ -5,7 +5,7 @@ ENV LV_RELEASED https://download.ni.com/support/nipkg/products/ni-l/ni-labview-2
 
 WORKDIR "/Program Files/National Instruments/NI Package Manager"
 
-# Download, Install LabVIEW and Enable TCP Server
+# Download, Install LabVIEW and Enable TCP Server and Reboot
 RUN nipkg.exe feed-add --name=ni-labview-2021-core-x86-en-2021-released %LV_RELEASED% &&\
     nipkg.exe update &&\
     powershell -Command New-Item 'C:\Program Files (x86)\National Instruments\LabVIEW 2021' -ItemType Directory &&\
