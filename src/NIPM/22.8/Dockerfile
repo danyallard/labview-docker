@@ -5,7 +5,7 @@ RUN net accounts /maxpwage:unlimited
 RUN net user Container /add /expire:never /passwordreq:no
 RUN net localgroup Administrators Container /add
 
-USER Container
+#USER Container
 
 WORKDIR /users/public/downloads
 
