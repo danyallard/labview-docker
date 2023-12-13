@@ -20,8 +20,8 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     
-    - name: Build Docker image for UTF 21.0 32 bit
+    - name: Build Docker image for UTF 21.0 32bit
       run: docker build --rm -f ".\src\UTF\32bit\21.0\Dockerfile" -t ${{ secrets.DOCKERHUB_USERNAME }}/utf:21.0-32bit ".\src\UTF\32bit\21.0"
-    - name: Push Docker image for UTF 21.0 32 bit
+    - name: Push Docker image for UTF 21.0 32bit
       run: docker image push --all-tags ${{ secrets.DOCKERHUB_USERNAME }}/utf
     
