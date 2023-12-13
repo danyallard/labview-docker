@@ -1,4 +1,4 @@
-name: FULL Docker Image Layer
+name: FULL Docker Images
 
 on:
   push:

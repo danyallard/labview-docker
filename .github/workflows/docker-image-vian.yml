@@ -1,4 +1,4 @@
-name: VI Analyzer Docker Image Layer
+name: VI Analyzer Docker Image
 
 on:
   push:

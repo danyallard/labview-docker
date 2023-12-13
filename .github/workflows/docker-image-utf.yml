@@ -1,4 +1,4 @@
-name: UTF Docker Image Layer
+name: UTF Docker Image
 
 on:
   push:

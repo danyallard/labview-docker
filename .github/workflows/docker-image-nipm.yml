@@ -1,4 +1,4 @@
-name: NIPM Docker Image Layer
+name: NIPM Docker Image
 
 on:
   push:

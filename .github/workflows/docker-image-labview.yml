@@ -1,4 +1,4 @@
-name: LabVIEW Docker Image Layer
+name: LabVIEW Docker Image
 
 on:
   push:
