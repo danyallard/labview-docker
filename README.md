@@ -10,9 +10,10 @@ LabVIEW 2023 not supported yet due to error installing the latest NI Package Man
 
 [![LabVIEW 2021 32bit Docker](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-labview.yml/badge.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-labview.yml)
 
-[![VIAN 2021 32bit Docker](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-vian.yml/badge.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-vian.yml)
+[![VIAN 2021 32bit Docker](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-vian.yml/docker.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-vian.yml)
 
 [![UTF 2021 32bit Docker](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-utf.yml/badge.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-utf.yml)
+
 
 ## Docker Hierarchy
 
