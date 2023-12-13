@@ -23,7 +23,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ./src/NIPM/22.8
         push: true
         tags: danyallard/nipm-22.8:$(date +%s)
     
