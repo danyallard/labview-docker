@@ -12,8 +12,9 @@ WORKDIR /users/public/downloads
 # Download NI Package Manager and Install
 ADD https://download.ni.com/support/nipkg/products/ni-package-manager/installers/NIPackageManager22.8.0.exe NIPackageManager22.8.0.exe
 
-RUN NIPackageManager22.8.0.exe --passive --accept-eulas --prevent-reboot &&\
-    del NIPackageManager22.8.0.exe
+RUN NIPackageManager22.8.0.exe --passive --accept-eulas --prevent-reboot
+
+# RUN del NIPackageManager22.8.0.exe
 
 # Disable Packages Cache
 WORKDIR "/ProgramData/National Instruments/NI Package Manager/Settings"
