@@ -24,8 +24,6 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     
     - name: Build and push Docker image
-      run: docker build --rm -f ".\src\NIPM\22.8\Dockerfile" `
-           -t ${{ secrets.DOCKERHUB_USERNAME }}/nipm:22.8 `
-           ".\src\NIPM\22.8"
+      run: docker build --rm -f ".\src\NIPM\22.8\Dockerfile" -t ${{ secrets.DOCKERHUB_USERNAME }}/nipm:22.8 ".\src\NIPM\22.8"
       
     
