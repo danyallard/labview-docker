@@ -4,16 +4,15 @@ This repo contains docker files for building LabVIEW 2021 and 2022 Docker images
 
 LabVIEW 2023 not supported yet due to error installing the latest NI Package Manager
 
-[![FULL Docker Image](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-full.yml/badge.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-full.yml)
+https://img.shields.io/github/actions/workflow/status/danyallard/labview-docker/docker-image-full.yml?logo=Docker&label=Full%20Docker%20Image%20Layers
 
-[![NIPM Docker Image](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-nipm.yml/badge.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-nipm.yml)
+https://img.shields.io/github/actions/workflow/status/danyallard/labview-docker/docker-image-nipm.yml?logo=Docker&label=NIPM%20Docker%20Image
 
-[![LabVIEW 2021 32bit Docker](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-labview.yml/badge.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-labview.yml)
+https://img.shields.io/github/actions/workflow/status/danyallard/labview-docker/docker-image-labview.yml?logo=Docker&label=LabVIEW%20Docker%20Image
 
-[![VIAN 2021 32bit Docker](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-vian.yml/docker.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-vian.yml)
+https://img.shields.io/github/actions/workflow/status/danyallard/labview-docker/docker-image-vian.yml?logo=Docker&label=VI Analyzer%20Docker%20Image
 
-[![UTF 2021 32bit Docker](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-utf.yml/badge.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image-utf.yml)
-
+https://img.shields.io/github/actions/workflow/status/danyallard/labview-docker/docker-image-utf.yml?logo=Docker&label=UTF%20Docker%20Image
 
 ## Docker Hierarchy
 
