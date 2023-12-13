@@ -27,4 +27,3 @@ RUN nipkg.exe feed-add --name=ni-package-builder-22-5-released https://download.
     nipkg.exe update &&\
     setx /M PATH "%PATH%;C:\Program Files (x86)\National Instruments\Package Builder"  &&\
     nipkg.exe install --accept-eulas --yes ni-package-builder
-

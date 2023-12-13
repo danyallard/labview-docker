@@ -1,5 +1,5 @@
 # Get base image
-FROM danyallard/nipm:23.8
+FROM danyallard/nipm:22.8
 
 ENV LV_RELEASED https://download.ni.com/support/nipkg/products/ni-l/ni-labview-2021/21.1/released
 
