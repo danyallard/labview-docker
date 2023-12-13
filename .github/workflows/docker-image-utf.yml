@@ -1,4 +1,4 @@
-name: NIPM Docker Image Layer
+name: UTF Docker Image Layer
 
 on:
   push:

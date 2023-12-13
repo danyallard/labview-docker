@@ -1,4 +1,4 @@
-name: NIPM Docker Image Layer
+name: LabVIEW Docker Image Layer
 
 on:
   push:

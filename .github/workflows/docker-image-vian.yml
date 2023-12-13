@@ -1,4 +1,4 @@
-name: NIPM Docker Image Layer
+name: VI Analyzer Docker Image Layer
 
 on:
   push:
