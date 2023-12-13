@@ -24,10 +24,8 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     
     - name: Build and push Docker image
-      uses: docker/build-push-action@v5
-      with:
-        context: ./src/NIPM/22.8
-        file: ./Dockerfile
-        push: true
-        tags: danyallard/nipm-22.8:$(date +%s)
+      run: docker build --rm -f ".\src\NIPM\22.8\Dockerfile" `
+           -t ${{ secrets.DOCKERHUB_USERNAME }}/nipm:22.8 `
+           ".\src\NIPM\22.8"
+      
     
