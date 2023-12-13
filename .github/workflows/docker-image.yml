@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
     - name: Checkout code
@@ -27,6 +27,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: ./src/NIPM/22.8
+        file: ./Dockerfile
         push: true
         tags: danyallard/nipm-22.8:$(date +%s)
     
