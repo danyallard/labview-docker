@@ -2,9 +2,11 @@ name: NIPM Docker Image Layer
 
 on:
   push:
-    branches: [ "main/src/NIPM" ]
+    branches: [ "main" ]
+    paths: 'src/NIPM/**'
   pull_request:
-    branches: [ "main/src/NIPM" ]
+    branches: [ "main" ]
+    paths: 'src/NIPM/**'
 
 jobs:
   build:

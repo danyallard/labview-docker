@@ -2,9 +2,11 @@ name: LabVIEW Docker Image Layer
 
 on:
   push:
-    branches: [ "main/src/LabVIEW" ]
+    branches: [ "main" ]
+    paths: 'src/LabVIEW/**'
   pull_request:
-    branches: [ "main/src/LabVIEW" ]
+    branches: [ "main" ]
+    paths: 'src/LabVIEW/**'
 
 jobs:
   build:

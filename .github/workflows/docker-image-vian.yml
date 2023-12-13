@@ -2,10 +2,11 @@ name: VI Analyzer Docker Image Layer
 
 on:
   push:
-    branches: [ "main/src/VIAnalyzer" ]
+    branches: [ "main" ]
+    paths: 'src/VIAnalyzer/**'
   pull_request:
-    branches: [ "main/src/VIAnalyzer" ]
-
+    branches: [ "main" ]
+    paths: 'src/VIAnalyzer/**'
 jobs:
   build:
     runs-on: windows-2019

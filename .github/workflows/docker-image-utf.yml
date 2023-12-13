@@ -2,9 +2,11 @@ name: UTF Docker Image Layer
 
 on:
   push:
-    branches: [ "main/src/UTF" ]
+    branches: [ "main" ]
+    paths: 'src/UTF/**'
   pull_request:
-    branches: [ "main/src/UTF" ]
+    branches: [ "main" ]
+    paths: 'src/UTF/**'
 
 jobs:
   build:
