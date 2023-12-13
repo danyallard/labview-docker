@@ -4,6 +4,9 @@ This repo contains docker files for building LabVIEW 2021 and 2022 Docker images
 
 LabVIEW 2023 not supported yet due to error installing the latest NI Package Manager
 
+[![NIPM Docker Image Layer](https://github.com/danyallard/labview-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/danyallard/labview-docker/actions/workflows/docker-image.yml)
+
+
 ## Docker Hierarchy
 
 ```mermaid
