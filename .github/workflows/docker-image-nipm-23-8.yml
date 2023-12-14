@@ -1,4 +1,4 @@
-name: NIPM Docker Image
+name: NIPM 23.8 Docker Image
 
 on:
   push:
