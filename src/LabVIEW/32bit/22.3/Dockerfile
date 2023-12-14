@@ -16,6 +16,3 @@ RUN nipkg.exe feed-add --name=ni-labview-2022-core-x86-en-2022-released %LV_RELE
 # Download and Install LabVIEW CLI
 RUN nipkg.exe install --accept-eulas --yes ni-labview-command-line-interface-x86 &&\
     setx /M PATH "%PATH%;C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI"
-
-WORKDIR "/Program Files (x86)/National Instruments/Shared/License Manager/bin"
-ADD https://github.com/danyallard/labview-docker/tree/main/src/LabVIEW/activate_labview.ps1 activate_labview.ps1
