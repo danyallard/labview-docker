@@ -1,5 +1,5 @@
 # Get Windows Base Image
-FROM mcr.microsoft.com/windows/servercore:ltsc2019
+FROM mcr.microsoft.com/windows:ltsc2019
 
 RUN net accounts /maxpwage:unlimited
 RUN net user Container /add /expire:never /passwordreq:no
@@ -12,8 +12,7 @@ WORKDIR /users/public/downloads
 # Download NI Package Manager and Install
 ADD https://download.ni.com/support/nipkg/products/ni-package-manager/installers/NIPackageManager23.8.0.exe NIPackageManager23.8.0.exe
 
-RUN NIPackageManager23.8.0.exe --passive --accept-eulas --prevent-reboot &&\
-    del NIPackageManager23.8.0.exe
+RUN NIPackageManager23.8.0.exe --passive --accept-eulas --prevent-reboot
 
 # Disable Packages Cache
 WORKDIR "/ProgramData/National Instruments/NI Package Manager/Settings"
