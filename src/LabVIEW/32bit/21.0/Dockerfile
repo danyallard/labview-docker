@@ -18,3 +18,7 @@ RUN nipkg.exe feed-add --name=ni-labview-2021-core-x86-en-2021-released %LV_RELE
 # Set environment path to call LabVIEW CLI
 RUN nipkg.exe install --accept-eulas --yes ni-labview-command-line-interface-x86 &&\
     setx /M PATH "%PATH%;C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI"
+
+WORKDIR /clone-workspace
+RUN git clone https://github.com/danyallard/labview-docker.git
+COPY --from=0 /clone-workspace/labview-docker/src/LabVIEW/activate_labview.ps1 /Program%20Files%20(x86)/National%20Instruments/Shared/License%20Manager/bin/activate_labview.ps1
